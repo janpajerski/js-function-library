@@ -24,6 +24,6 @@ function randInt(num) {
     } else if (num % 1 !== 0) {
         alert('The random function requires an integer as input.');
     } else {
-        return Math.round(Math.random() * num);
+        return Math.floor(Math.random() * (num + 1));
     }
 }
